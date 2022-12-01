@@ -1,0 +1,27 @@
+@value colors: "./colors.module.css";
+@value primary, secondary from colors;
+
+.button {
+  border: solid 2px primary;
+  box-shadow: none;
+  font-weight: bold;
+  background-color: primary;
+  color: secondary;
+  margin-top: 20px;
+  padding: 10px 30px;
+  border-radius: 4px;
+  outline: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: secondary;
+  color: primary;
+}
+
+@media (max-width: 768px) {
+  .button {
+    padding: 10px;
+  }
+}

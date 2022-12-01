@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Feedback results Results page matches snapshot 1`] = `
+<div>
+  <div
+    class="layout"
+  >
+    <div
+      class="header"
+    >
+      <h2
+        class="title"
+      >
+        Feedback results
+      </h2>
+      <button
+        class="button"
+      >
+        Go back
+      </button>
+    </div>
+    <div
+      class="chart"
+    >
+      Chart
+    </div>
+    <h3>
+      User Reviews
+    </h3>
+    <ul
+      class="list"
+    >
+      <li
+        class="list-item"
+      >
+        <div
+          class="review"
+        >
+          <div>
+            <p
+              class="review-heading"
+            >
+              john doe
+            </p>
+            <p
+              class="review-subheading"
+            >
+              john.doe@gmail.com
+            </p>
+          </div>
+          <div
+            aria-label="Rating: 4 out of 5 stars"
+            data-testid="rating-4-stars"
+            role="img"
+          >
+            <span
+              aria-hidden="true"
+            >
+              <svg
+                class="rating rating-wrapper filled"
+              >
+                star.svg
+              </svg>
+            </span>
+            <span
+              aria-hidden="true"
+            >
+              <svg
+                class="rating rating-wrapper filled"
+              >
+                star.svg
+              </svg>
+            </span>
+            <span
+              aria-hidden="true"
+            >
+              <svg
+                class="rating rating-wrapper filled"
+              >
+                star.svg
+              </svg>
+            </span>
+            <span
+              aria-hidden="true"
+            >
+              <svg
+                class="rating rating-wrapper filled"
+              >
+                star.svg
+              </svg>
+            </span>
+            <span
+              aria-hidden="true"
+            >
+              <svg
+                class="rating rating-wrapper"
+              >
+                star.svg
+              </svg>
+            </span>
+          </div>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quod impedit alias vitae molestias aperiam animi sunt tenetur harum molestiae repellat dolorum, exercitationem veritatis reprehenderit obcaecati. Ratione quaerat minus odit.
+        </p>
+      </li>
+    </ul>
+  </div>
+</div>
+`;

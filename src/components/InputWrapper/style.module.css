@@ -1,0 +1,22 @@
+@value colors: "styles/colors.module.css";
+@value error from colors;
+
+.label {
+  composes: label from "styles/input.module.css";
+}
+
+.wrapper {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.error-message {
+  margin-bottom: 0;
+  margin-top: 5px;
+  font-size: 0.7em;
+  color: error;
+}
+
+.required {
+  color: error;
+}

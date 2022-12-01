@@ -1,0 +1,54 @@
+@value colors: "styles/colors.module.css";
+@value primary, secondary from colors;
+
+.rating {
+  stroke-width: 4px;
+  stroke: primary;
+  fill: secondary;
+}
+
+.filled {
+  fill: primary;
+}
+
+.input {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.radio {
+  display: inline-block;
+  width: 34px;
+  margin-left: 3px;
+}
+
+.radio:hover .rating {
+  cursor: pointer;
+}
+
+.label {
+  composes: label from "styles/input.module.css";
+}
+
+.wrapper {
+  border: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.rating-wrapper {
+  width: 20px;
+  margin-right: 2px;
+}
+
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}

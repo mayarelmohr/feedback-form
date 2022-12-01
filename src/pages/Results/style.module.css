@@ -1,0 +1,61 @@
+@value colors: "styles/colors.module.css";
+@value border from colors;
+
+.layout {
+  composes: layout from "styles/layout.module.css";
+}
+
+.title {
+  font-weight: bold;
+  font-size: 1.25em;
+  margin-bottom: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.button {
+  composes: button from "styles/button.module.css";
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 60vh;
+}
+
+.list-item:not(:last-child) {
+  border-bottom: solid 1px border;
+}
+
+.review {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.review-heading {
+  font-weight: bold;
+  color: rgb(62, 62, 62);
+  margin-bottom: 0;
+}
+
+.review-subheading {
+  font-size: 0.8em;
+  margin-top: 3px;
+}
+
+.chart {
+  max-width: 80%;
+}
+
+@media (max-width: 768px) {
+  .chart {
+    max-width: 100%;
+  }
+}

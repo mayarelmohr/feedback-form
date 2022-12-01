@@ -1,0 +1,32 @@
+@value colors: "styles/colors.module.css";
+@value primary, secondary from colors;
+
+.hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.logo {
+  fill: secondary;
+}
+
+.header {
+  padding: 10px 30px;
+  height: 60px;
+  line-height: 60px;
+  background-color: primary;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper {
+  margin: 0;
+}

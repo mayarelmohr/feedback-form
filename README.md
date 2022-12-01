@@ -1,10 +1,83 @@
-# Getting Started with Create React App
+# Feedback form
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Use correct node version
 
-## Available Scripts
+Before installation please take a minute to ensure you have a compatible node version, the project uses [nvm](https://github.com/creationix/nvm) to specifies which NodeJS version is used you can also find it in `.nvmrc`.
 
-In the project directory, you can run:
+```bash
+nvm install
+nvm use
+```
+
+### Use correct node version
+
+Before installation please take a minute to ensure you have a compatible node version, the project uses [nvm](https://github.com/creationix/nvm) to specifies which NodeJS version is used you can also find it in `.nvmrc`.
+
+```bash
+nvm install
+nvm use
+```
+
+### Project stack
+
+This project is [Create React App](https://github.com/facebook/create-react-app) project with typescript.
+
+For state management: React Context API.
+For styling: css modules.
+For testing: React testing library.
+
+### Folder structure
+
+```
+
+src
+├── `components/` Has all reusable components.
+├── `pages/` Wraps components as pages.
+├── `styles/` Used for common css modules that are needed in other components.
+├── `store/` Used for state management, It has context and reducer
+├── `utils/` Has all utils needed like constants or util functions
+└── `__tests__/` Has all tests in the app
+
+```
+
+### Enhancements
+
+UI:
+
+- Add common style for typography and spacings
+- Use some styling library like tailwind css for easier styling
+- Add favicon and page title
+- Use storybook for components documentation
+
+Accessibilty:
+
+- Adding a library like react-axe for accessibility testing.
+
+Testing:
+
+- Add Testing for the rendered chart labels and values in Results page.
+- Add more unit tests for input and rating inputs.
+- Move mock data to a separate file and use a mocking library to provide more confidence.
+
+Product:
+
+- Add an endpoint to save review, to list them later in results page
+
+### State Management
+
+For global state there is `FeedbackContextProvider` that has two atrributes:
+
+1- `FeedbackList`: It has a list of reviews added and has `name`, `comment`, `rating` and `email` fields;
+2- `RatingList`: This array gets updated when the feedback list changes, it's like a set which keeps track of the count of all ratings where the `[index + 1]` is the rate and the value is the count.
+For example: [0, 2, 4, 1, 0], means that:
+
+- 0 users rated 1 star.
+- 2 users rated 2 stars.
+- 4 users rated 3 stars.
+- 1 user rated 4 stars.
+- 0 user rated 5 stars
+
+When user submits feedback, it's added to the global feedbackList
 
 ### `npm start`
 
@@ -44,4 +117,3 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
-# feedback-form

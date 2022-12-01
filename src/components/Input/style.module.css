@@ -1,0 +1,7 @@
+.input {
+  composes: input from "styles/input.module.css";
+}
+
+.error-input {
+  composes: error-input from "styles/input.module.css";
+}

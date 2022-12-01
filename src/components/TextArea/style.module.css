@@ -1,0 +1,10 @@
+.textarea {
+  composes: input from "styles/input.module.css";
+  min-height: 250px;
+  font-family: inherit;
+  resize: none;
+}
+
+.error-input {
+  composes: error-input from "styles/input.module.css";
+}

@@ -1,0 +1,33 @@
+@value colors: "styles/colors.module.css";
+@value primary, secondary from colors;
+
+.layout {
+  composes: layout from "styles/layout.module.css";
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 15px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 1.25em;
+  margin-bottom: 10px;
+}
+
+.button {
+  composes: button from "styles/button.module.css";
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    display: block;
+  }
+}
