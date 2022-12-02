@@ -1,13 +1,6 @@
 # Feedback form
 
-### Use correct node version
-
-Before installation please take a minute to ensure you have a compatible node version, the project uses [nvm](https://github.com/creationix/nvm) to specifies which NodeJS version is used you can also find it in `.nvmrc`.
-
-```bash
-nvm install
-nvm use
-```
+You can find a [live link for the repo here](https://638970ddbc9e0b1d7cf71f09--jazzy-panda-955f30.netlify.app/)
 
 ### Use correct node version
 
